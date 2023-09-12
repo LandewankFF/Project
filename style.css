@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    display: flex;
+    margin: 0;
+    background-color: #215BF0;
+    color: white;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.background{
+    width: 100%;
+    height: 400px;
+    background-image: url(header.jpg);
+    background-size: cover; /* the picture according to class size*/
+    position: relative; /*if not use position relative  view website will dark*/
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* this's make it dark */
+}
+
+.container-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.title2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.message {
+    text-align: center;
+    color: white;
+}
+
+.search{
+    display: flex;
+    width: 30%;
+    height: 30px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#searchBook{
+    display: flex; /*so that the wrapped element becomes a row*/
+    width: 100%;
+}
+/* input searchBook */
+#searchBookTitle{
+    display: block;  
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0 15px;
+    border: none;
+}
+#searchBookTitle:focus{
+    outline: none;
+}
+/* Button */
+#searchSubmit{
+    height: 100%;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+}
+#searchSubmit > i {
+    color: #707070;
+}
+
+
+
+/* Section input form */
+.input_section {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 16px;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px auto; 
+    /*  margin: 30px auto; 
+    if it doesn't  use auto all element that wrapp arround input_section wont be in the middle
+    because margin auto will be Set the horizontal side margins (left and right) to Auto, which will ensure the element is in the horizontal center of the page. */
+}
+.input_section h2{
+    text-align: center;
+    color: #215BF0;
+}
+
+
+.input_section  form  .input  input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input_section  form  .input{
+    margin: 20px 0;
+}
+
+#bookSubmit{
+    width: 25%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #215BF0;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+#bookSubmit:active {
+    background-color: rgb(4, 155, 12); /*so if button is clicked it will be to will be change green*/
+}
+
+/* styling table */
+.sectionStatus{
+    width: 70%;
+    margin: 30px auto;
+}
+.text-primary header h2{
+    color:#215BF0;
+}
+
+
+/* CSS  "Move to Finished" */
+button.move-button {
+    background-color: green; 
+    color: white; 
+    padding: 3px 5px; 
+    border: none; 
+    cursor: pointer; 
+    margin-right: 5px; 
+}
+  
+/* CSS  "Delete" */
+button.delete-button {
+    background-color: red; 
+    color: white; 
+    padding: 3px 5px; 
+    border: none; 
+    cursor: pointer; 
+}
+  
+/* Spacing bettwen button*/
+  td button {
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #215BF0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.sectionStatus{
+    /* display: flex; */
+    flex-direction: row;   
+    justify-content: center;
+    width: 70%;
+}
