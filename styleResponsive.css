@@ -22,8 +22,11 @@
         width: 90%;
         margin: 20px auto;
     }
-    .move-button{
-        margin: 3px;
+     .sectionStatus{
+        width: 70%;
+    }
+   .move-button{
+        margin: 3px auto;
     }
     footer{
         font-size: 10px;
